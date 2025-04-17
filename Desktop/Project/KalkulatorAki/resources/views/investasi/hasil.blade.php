@@ -85,6 +85,18 @@
                                     </span>
                                 </td>
                             </tr>
+
+                            <tr class="table-info fw-bold">
+                                <th>Payback Period</th>
+                                <td>
+                                @if ($payback_formatted === null || $npv <= 0)
+                                     Tidak ditemukan
+                                @else
+                                    {{ $payback_formatted }}
+                                @endif
+                                </td>
+                                </tr>
+
                         </table>
 
                         <a href="{{ url('/investasi/kembali') }}" class="btn btn-secondary mt-3">← Kembali ke Form</a>
@@ -94,4 +106,5 @@
         </div>
     </div>
 </body>
+
 </html>

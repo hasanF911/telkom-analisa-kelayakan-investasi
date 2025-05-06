@@ -29,7 +29,7 @@
                             </div>
                         @endif
 
-                        <form action="{{ url('/investasi') }}" method="POST" onsubmit="return stripCommas()">
+                        <form action="{{ route('investasi.store') }}" method="POST" onsubmit="return stripCommas()">
                             @csrf
 
                             <div class="mb-3">
